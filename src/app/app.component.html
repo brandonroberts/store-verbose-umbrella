@@ -1,0 +1,12 @@
+<div><a routerLink="/">Home</a>
+<div><a routerLink="/lazy">Lazy</a>
+
+<div>Current Count: {{ counter | async }}</div>
+
+<button (click)="increment()">Increment</button>
+
+<button (click)="decrement()">Decrement</button>
+
+<button (click)="reset()">Reset Counter</button>
+
+<router-outlet></router-outlet>
